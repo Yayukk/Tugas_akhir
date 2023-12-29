@@ -9,7 +9,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
 		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-    	<title>Beranda</title>
+    	<title>Pemesanan</title>
     	<link rel="icon" href="{% static 'img/logo.png' %}">
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -25,19 +25,19 @@
 			  	<div class="collapse navbar-collapse" id="navbarText">
 			    	<ul class="navbar-nav ml-auto">
 			      		<li class="nav-item">
-			        		<a class="nav-link" href="{% url 'index' %}">Welcome</a>
+			        		<a class="nav-link" href="{% url 'index' %}">Selamat Datang</a>
 			      		</li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="{% url 'restaurant' %}">Restaurant</a>
+					    	<a class="nav-link" href="{% url 'restaurant' %}">Restoran</a>
 					    </li>
 					    <li class="nav-item">
 					    	<a class="nav-link" href="{% url 'menu' %}">Menu</a>
 					    </li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="{% url 'reservasi' %}">Reservation</a>
+					    	<a class="nav-link" href="{% url 'reservasi' %}">Pemesanan</a>
 					    </li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="{% url 'lokasi' %}">Our Location</a>
+					    	<a class="nav-link" href="{% url 'lokasi' %}">Lokasi Kami</a>
 					    </li>
 					    <li class="nav-item">
 					    	<a href="#" class="language" rel="it-IT"><img src="{% static 'img/indonesia.ico' %}" class="flag" alt="Indonesia"></a>
@@ -46,24 +46,24 @@
 				</div>
 			</nav>
 			<!--- End Navigation Bar -->
-          <!--- Start of Reservation-->
+         <!--- Start of Reservation-->
 			<div class="row" id="Reservation">
 				<div class="col navMenu">
-	     		 	<h2 class="text-center">~ Reservation ~</h2>
+	     		 	<h2 class="text-center">~ Pemesanan ~</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class=" col-lg-12 reserve-container" data-aos="fade-up">
 					<img class="img-fluid image-reserve" src="{% static 'img/reserve.jpg' %}">
 					<div class="reserve-text col-lg-12 ">
-						<h1 class="text-center">Timetables</h1>
+						<h1 class="text-center">Jadwal</h1>
 						<div class="row">
 							<div class="col-6">
-							   	<h2 class="text-center">Lunch</h2>
+							   	<h2 class="text-center">Makan Siang</h2>
 							    <h5 class="text-center">12:00 - 15:00</h5>
 							</div>
 							<div class="col-6">
-							    <h2 class="text-center">Dinner</h2>
+							    <h2 class="text-center">Makan Malam</h2>
 							    <h5 class="text-center">19:30 - 23:30</h5>
 							</div>
 						</div>
@@ -76,17 +76,17 @@
 					<form>
 						<div class="form-row">
 						  	<div class="form-group col-6">
-						  		<h3>Reserve</h3>
-						  		<label for="inputDate"> Date</label>
+						  		<h3>Pemesanan</h3>
+						  		<label for="inputDate"> Tanggal</label>
 						  		<input type="date" class="form-control" id="inputDate" placeholder="Data gg/mm/aaaa">
 						  	</div>
 						  	<div class="form-group col-6">
 						  		<h3>Details</h3>
-						  		<label for="inputName"> Name</label>
+						  		<label for="inputName"> Nama</label>
 						  		<input type="text" class="form-control" id="inputName" placeholder="Name">
 						  	</div>
 						  	<div class="form-group col-6">
-						  		<label for="inputTime"> Timetables</label>
+						  		<label for="inputTime"> Jadwal</label>
 						  		<input type="time" class="form-control" id="inputTime" placeholder="Timetables">
 						  	</div>
 						  	<div class="form-group col-6">
@@ -94,36 +94,36 @@
 						  		<input type="email" class="form-control" id="inputEmail" placeholder="Email">
 						  	</div>
 						  	<div class="form-group col-6">
-						  		<label for="inputNumber"> Number of Guests</label>
-						  		<input type="number" class="form-control" id="inputNumber" placeholder="Number of Guests">
+						  		<label for="inputNumber"> Jumlah Orang</label>
+						  		<input type="number" class="form-control" id="inputNumber" placeholder="Jumlah Orang">
 						  	</div>
 						  	<div class="form-group col-6">
-						  		<label for="inputCel"> Phone</label>
-						  		<input type="tel" class="form-control" id="inputCel" placeholder="Phone">
+						  		<label for="inputCel"> Ponsel</label>
+						  		<input type="tel" class="form-control" id="inputCel" placeholder="Ponsel">
 						  	</div>
   							<div class="form-group col-12">
-  								<label for="inputComment"> Further requests</label>
-								<textarea class="form-control" rows="4" id="inputComment" placeholder="Further requests"></textarea>
+  								<label for="inputComment"> Permintaan Lebih Lanjut</label>
+								<textarea class="form-control" rows="4" id="inputComment" placeholder="Permintaan Lebih Lanjut"></textarea>
 							</div>
 					 	</div>
 						<div class="row">
 					  		<div class="col-md-4 col-md-offset-4">
-					  			<button type="submit" class="btn btn-secondary btn-block">Reserve</button>
+					  			<button type="submit" class="btn btn-secondary btn-block">Pesan</button>
 					  		</div>
 					  	</div>
 					</form>
 				</div>
 			</div>
 			<!--- End of Reserve -->
-            <div class="row footer bg-light">
+			<div class="row footer bg-light">
 				<div class="col">
-					<p class="text-center">Follow us: <a class="social-icon" href="https://www.facebook.com/rubiktechnologiesShpk/"><i class="fab fa-facebook"></i></a> <a class="social-icon" href="https://www.instagram.com/rubiktechnologies/"><i class="fab fa-instagram"></i></a></p>
+					<p class="text-center">Ikuti Kami: <a class="social-icon" href="#"><i class="fab fa-facebook"></i></a> <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a></p>
 				</div>
 				<div class="col">
-					<p class="text-center">Copyright &copy; 2018</p>
+					<p class="text-center">@KharismaCopyright &copy; 2023</p>
 				</div>
 				<div class="col">
-					<p class="text-center">Powered by: <a href="https://rubik-technologies.com/">Rubik Technologies</a></p>
+					<p class="text-center">Powered by: Saya</p>
 				</div>
 			</div>
 		</div>

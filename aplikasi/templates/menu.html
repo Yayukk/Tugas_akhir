@@ -9,7 +9,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
 		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-    	<title>Beranda</title>
+    	<title>Menu</title>
     	<link rel="icon" href="{% static 'img/logo.png' %}">
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -22,22 +22,22 @@
 		 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		    		<span class="navbar-toggler-icon"></span>
 		 		</button>
-			  	<div class="collapse navbar-collapse" id="navbarText">
+			 	<div class="collapse navbar-collapse" id="navbarText">
 			    	<ul class="navbar-nav ml-auto">
 			      		<li class="nav-item">
-			        		<a class="nav-link" href="{% url 'index' %}">Welcome</a>
+			        		<a class="nav-link" href="{% url 'index' %}">Selamat Datang</a>
 			      		</li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="{% url 'restaurant' %}">Restaurant</a>
+					    	<a class="nav-link" href="{% url 'restaurant' %}">Restoran</a>
 					    </li>
 					    <li class="nav-item">
 					    	<a class="nav-link" href="{% url 'menu' %}">Menu</a>
 					    </li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="{% url 'reservasi' %}">Reservation</a>
+					    	<a class="nav-link" href="{% url 'reservasi' %}">Pemesanan</a>
 					    </li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="{% url 'lokasi' %}">Our Location</a>
+					    	<a class="nav-link" href="{% url 'lokasi' %}">Lokasi Kami</a>
 					    </li>
 					    <li class="nav-item">
 					    	<a href="#" class="language" rel="it-IT"><img src="{% static 'img/indonesia.ico' %}" class="flag" alt="Indonesia"></a>
@@ -47,7 +47,7 @@
 			</nav>
 			<!--- End Navigation Bar -->
 
-           <!--- Start of Menu-->
+          <!--- Start of Menu-->
 			<div class="row" id="Menu">
 				<div class="col navMenu">
 	     		 	<h2 class="text-center" >~ Menu ~</h2>
@@ -58,58 +58,58 @@
 					<div class="card view zoom">
   						<img class="card-img-top img-fluid " src="{% static 'img/meat-menu.jpg' %}">
 					  	<div class="card-body">
-					  		<h5 class="card-title">~ Meat Menu ~</h5>
+					  		<h5 class="card-title">~ Menu Daging ~</h5>
 					    	<ul class="list-group list-group-flush">
-							    <li class="list-group-item">Bocconcini di carne in nido di sfoglia</li>
-							    <li class="list-group-item">Bruschette con maiale al curry</li>
-							 	<li class="list-group-item">Uova al prosciutto</li>
-							 	<li class="list-group-item">Vitello tonnato</li>
-							 	<li class="list-group-item">Fesa di tacchino marinata con olive</li>
+							    <li class="list-group-item">Ayam Bakar</li>
+							    <li class="list-group-item">Lalapan</li>
+							 	<li class="list-group-item">Wagyu Steak</li>
+							 	<li class="list-group-item">Ayam Steak</li>
+							 	<li class="list-group-item">Rica-Rica Daging Sapi</li>
 							</ul>
 					  	</div>
 					</div>
 				</div>
 				<div class="col-md-4" data-aos="slide-up">
 					<div class="card">
-  						<img class="card-img-top img-fluid " src="{% static 'img/fish-menu.jpg' %}">
+  						<img class="card-img-top img-fluid " src="{% static 'img/ikan.jpg' %}">
 					  	<div class="card-body">
-					  		<h5 class="card-title">~ Fish Menu ~</h5>
+					  		<h5 class="card-title">~ Menu Ikan~</h5>
 					    	<ul class="list-group list-group-flush">
-							    <li class="list-group-item">Carpaccio di polpo</li>
-							    <li class="list-group-item">Cozze al verde</li>
-							 	<li class="list-group-item">Cocktail di gamberi</li>
-							 	<li class="list-group-item">Risotto alla crema di scampi</li>
-							 	<li class="list-group-item">Ravioli di pesce con crema di scampi</li>
+							    <li class="list-group-item">Gurame Bakar</li>
+							    <li class="list-group-item">Bandeng Bakar Kecap</li>
+							 	<li class="list-group-item">Steak Kakap</li>
+							 	<li class="list-group-item">Gurame Asam Manis</li>
+							 	<li class="list-group-item">Gulai Kepala Kakap</li>
 							</ul>
 					  	</div>
 					</div>
 				</div>
 				<div class="col-md-4" data-aos="slide-up">
 					<div class="card">
-  						<img class="card-img-top img-fluid" src="{% static 'img/menu-vegetarian.jpg' %}">
+  						<img class="card-img-top img-fluid" src="{% static 'img/vege.jpg' %}">
 					  	<div class="card-body">
-					  		<h5 class="card-title">~ Vegetarian Menu ~</h5>
+					  		<h5 class="card-title">~ Menu Vegetarian ~</h5>
 					    	<ul class="list-group list-group-flush">
-							    <li class="list-group-item">Parmigiana di melanzane</li>
-							    <li class="list-group-item">Strudel con ricotta e spinaci</li>
-							 	<li class="list-group-item">Polpette di spinaci e ricotta</li>
-							 	<li class="list-group-item">Frittata di patate al forno</li>
-							 	<li class="list-group-item">Spaghetti con le polpettine vegetariane</li>
+							    <li class="list-group-item">Sop Tahu</li>
+							    <li class="list-group-item">Gado-Gado</li>
+							 	<li class="list-group-item">Sup Krim Jagung</li>
+							 	<li class="list-group-item">Sate Jamur</li>
+							 	<li class="list-group-item">Urap</li>
 							</ul>
 					  	</div>
 					</div>
 				</div>
 			</div>
 			<!--- End of Menu -->
-            <div class="row footer bg-light">
+			<div class="row footer bg-light">
 				<div class="col">
-					<p class="text-center">Follow us: <a class="social-icon" href="https://www.facebook.com/rubiktechnologiesShpk/"><i class="fab fa-facebook"></i></a> <a class="social-icon" href="https://www.instagram.com/rubiktechnologies/"><i class="fab fa-instagram"></i></a></p>
+					<p class="text-center">Ikuti Kami: <a class="social-icon" href="#"><i class="fab fa-facebook"></i></a> <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a></p>
 				</div>
 				<div class="col">
-					<p class="text-center">Copyright &copy; 2018</p>
+					<p class="text-center">@KharismaCopyright &copy; 2023</p>
 				</div>
 				<div class="col">
-					<p class="text-center">Powered by: <a href="https://rubik-technologies.com/">Rubik Technologies</a></p>
+					<p class="text-center">Powered by: Saya</p>
 				</div>
 			</div>
 		</div>
