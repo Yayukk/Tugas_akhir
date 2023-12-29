@@ -1,0 +1,113 @@
+{% load static %}
+
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+		<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    	<title>Beranda</title>
+    	<link rel="icon" href="{% static 'img/logo.png' %}">
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	  	<div id="Welcome">
+	  		<!---Start navigation Bar -->
+	    	<nav class="navbar navbar-expand-lg navbar fixed-top  navbar-light bg-light">
+		 		<a class="navbar-brand" href="{% url 'index' %}">
+    				<img src="{% static 'img/logo.png' %}" width="50" height="50" class="d-inline-block" alt=""> Kharisma Restaurant
+		 		</a>
+		 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		    		<span class="navbar-toggler-icon"></span>
+		 		</button>
+			  	<div class="collapse navbar-collapse" id="navbarText">
+			    	<ul class="navbar-nav ml-auto">
+			      		<li class="nav-item">
+			        		<a class="nav-link" href="{% url 'index' %}">Welcome</a>
+			      		</li>
+					    <li class="nav-item">
+					    	<a class="nav-link" href="{% url 'restaurant' %}">Restaurant</a>
+					    </li>
+					    <li class="nav-item">
+					    	<a class="nav-link" href="{% url 'menu' %}">Menu</a>
+					    </li>
+					    <li class="nav-item">
+					    	<a class="nav-link" href="{% url 'reservasi' %}">Reservation</a>
+					    </li>
+					    <li class="nav-item">
+					    	<a class="nav-link" href="{% url 'lokasi' %}">Our Location</a>
+					    </li>
+					    <li class="nav-item">
+					    	<a href="#" class="language" rel="it-IT"><img src="{% static 'img/indonesia.ico' %}" class="flag" alt="Indonesia"></a>
+					    </li>
+				    </ul>
+				</div>
+			</nav>
+			<!--- End Navigation Bar -->
+			<!--- Restaurant-->
+		<div class="container">
+			<div class="row" id="Restaurant">
+			   <div class="col navMenu">
+					 <h2 class="text-center" >~ Restaurant ~</h2>
+			   </div>
+			 </div>
+			 <div class="row bg-light" >
+				 <div class="col-md-6">
+					 <h3>Location</h3>
+					 <p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
+					 <h5>A Unique Experience</h5>
+					 <p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
+				 </div>
+				 <div class="col-md-6" data-aos="fade-up">
+					 <img class="img-fluid" src="{% static 'img/location.jpg' %}">
+				 </div>
+			 </div>
+			 <div class="row bg-light"><br></div>
+			 <div class="row bg-light">
+				 <div class="col-md-6 order-md-1 order-2" data-aos="fade-up">
+					 <img class="img-fluid " src="{% static 'img/cuisine.jpg' %}">
+				 </div>
+				 <div class="col-md-6 order-md-12 order-1">
+					 <h3>Cuisine</h3>
+					 <p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
+					 <h5>A Unique Experience</h5>
+					 <p>Thanks for stopping by. We are the last authentic Italian restaurant in Milan, serving delicious Italian cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check out our menu. We hope you'll soon join us for a superb Italian culinary experience.</p>
+				 </div>
+			 </div>
+			 <!--- End of Restaurant -->
+              <div class="row footer bg-light">
+				<div class="col">
+					<p class="text-center">Follow us: <a class="social-icon" href="https://www.facebook.com/rubiktechnologiesShpk/"><i class="fab fa-facebook"></i></a> <a class="social-icon" href="https://www.instagram.com/rubiktechnologies/"><i class="fab fa-instagram"></i></a></p>
+				</div>
+				<div class="col">
+					<p class="text-center">Copyright &copy; 2018</p>
+				</div>
+				<div class="col">
+					<p class="text-center">Powered by: <a href="https://rubik-technologies.com/">Rubik Technologies</a></p>
+				</div>
+			</div>
+		</div>
+		<footer class="container">
+			<div class= "row only-mobile">
+				<div class="col-6">
+					<a class="btn btn-primary btn-block text-center" href="tel:++390000000"><i class="fa fa-phone" aria-hidden="true"></i> Call</a>
+				</div>
+				<div class="col-6">
+					<a class="btn btn-success btn-block text-center" href="https://api.whatsapp.com/send?phone=+390000000"><i class="fab fa-whatsapp" aria-hidden="true"></i> Whatsapp</a>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script type="text/javascript" src="js/smooth-scroll.js"></script>
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+		<script type="text/javascript" src="js/image-effect.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFZjOV0KA68G2YAh-rn7I3qKqCQEh_Ja0&callback=myMap">
+	    </script>
+  	</body>
+</html>
